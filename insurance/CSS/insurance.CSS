@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body {
+   width: 100vw;
+   background-color: #EBEBEB;
+   margin: 0 auto;
+}
+
+.wrapper, .wrapper2 {
+   max-width: 1000px;
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-auto-rows: auto;
+}
+
+.top {
+   grid-column: 1/7;
+   margin-top: -8px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: auto;
+}
+
+.info-card {
+   background-color: #C7DDEA;
+   grid-column: 1/span 1;
+   grid-row: 1/span 2;
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   height: 540px;
+}
+
+.info-card img {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin-bottom: -7px;
+}
+
+.info-card h2 {
+   font-family: 'Frank Ruhl Libre';
+   font-weight: 900;
+   font-size: 45px;
+   padding-left: 8rem;
+   margin-bottom: -40px;
+   margin-top: 3.5rem;
+   color: #000;
+}
+
+.info-card p {
+   font-family: 'Fira Sans';
+   font-weight: 500;
+   font-size: 14px;
+   padding: 0rem 7rem 7rem 8rem;
+   line-height: 24px;
+   margin-top: 0px;
+}
+
+.info-card p span {
+   color: #fff;
+}
+
+.sml-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.top-1 {
+   background-color: #F17949;
+   grid-column: 2/span 1;
+   grid-row: 1;
+}
+
+.top-2 {
+   background-color: #FFB939;
+   grid-column: 2;
+   grid-row: 2;
+}
+
+.sml-info p {
+   font-family: 'Fira Sans';
+   font-weight: 700;
+   font-size: 11px;
+   margin: 0;
+}
+h2 {
+   font-family: 'Frank Ruhl Libre';
+   font-weight: 900;
+   font-size: 32px;
+   color: #fff;
+   margin: 0;
+}
+.info-card .btn {
+   margin: -9.5rem 0rem 0rem 8rem;
+}
+
+.btn {
+   height: 39px;
+   width: 131px;
+   font-family: 'Fira Sans';
+   font-size: 10px;
+   font-weight: 700;
+   border: none;
+   border-radius: 100px;
+   background-color: #fff;
+   padding: 16px 24px 16px 24px;
+}
+
+.wrapper nav {
+   width: 100%;
+   grid-column: 2/span 4;
+   grid-row: 2/span 1;
+   margin: 0 auto;
+}
+nav ul {
+   padding: 0px;
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   z-index: 10;
+}
+
+nav ul li {
+   list-style-type: none;
+   padding: 0px;
+   margin: 0px;
+   
+}
+
+nav ul li:first-child a  {
+   opacity: 1;
+}
+
+a {
+   opacity: 0.4;
+   color:#000;
+   font-family: 'Fira Sans';
+   font-weight: 600;
+   font-size: 12px;
+   cursor: pointer;
+   margin: 0 auto;
+}
+
+.wrapper main {
+   width: 100%;
+   grid-column: 1/span 6;
+}
+
+main article:first-child {
+   margin-top: -328px;
+   background-color: #A9A19E;
+   height: 612px;
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 80px;
+}
+main article:first-child aside:first-child {
+   width: 320px;
+}
+main article:first-child aside:nth-child(2) {
+   width: 280px;
+}
+main article:first-child h2 {
+   font-size: 45px;
+   line-height: 45px;
+}
+main article:first-child aside p {
+   font-family: 'Fira Sans';
+   font-weight: 500;
+   font-size: 14px;
+   color: #00000099;
+   line-height: 24px;
+}
+main article:first-child aside:first-child .btn {
+   margin-top: 4rem;
+}
+
+
+main article:nth-child(2) {
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   gap: 1.5rem;
+}
+main article .card {
+   background-color: #fff;
+   width: 256px;
+   height: 328px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   margin: 0px;
+}
+main article .card aside, main article .card figure{
+   width: 236px;
+   text-align: center;
+   margin: 0px;
+}
+main article .card figure {
+   height: 172px;
+   position: relative;
+   border-radius: 5px;
+}
+main article .card aside {
+   height: 308px;
+}
+main article .card figure img {
+   position: absolute;
+   bottom: 0;
+   left: 60px;
+}
+main article .card:first-child figure {
+   background-color: #C7DDEA;
+}
+main article .card:nth-child(2) figure {
+   background-color: #FAB131;
+}
+main article .card:nth-child(3) figure {
+   background-color: #F17949;
+}
+main article:nth-child(2) .card p {
+   font-family: 'Fira Sans';
+   font-weight: 700;
+   font-size: 11px;
+   line-height: 18px;
+   color: #00000066;
+   margin-bottom: 30px;
+}
+
+
+
+main article:nth-child(3) {
+   height: 680px;
+   margin: 0;
+   background-color: #FAB131;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main article:nth-child(3) section {
+   width: 442px;
+   text-align: center;
+}
+main article:nth-child(3) section h2 {
+   font-size: 45px;
+}
+main article:nth-child(3) section p {
+   font-family: 'Fira Sans';
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 500;
+}
+
+main article:first-child {
+   transform: translateY(328px);
+}
+main article:nth-child(2) {
+   transform: translateY(144px);
+}
+main article:nth-child(3) {
+   transform: translateY();
+}
+main article:nth-child(2) .card aside {
+   transform: translateY(-20px);
+}
+
+
+.box {
+   width: 100%;
+   grid-column: 1/span 6;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   background-color: #fff;
+}
+
+.box section:nth-child(1) {
+   background-color: #C7DDEA;
+}
+.box section:first-child h2 {
+   font-size: 45px;
+   color: #000;
+}
+   
+.box section:nth-child(3){
+   background-color: #EBEBEB;
+   font-size: 17px;
+   line-height: 20px;
+   }
+.box section:nth-child(5){
+   background-color: #F17949;
+   }
+   
+.box section {
+   height: 340px;
+   margin: 0;
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   position:relative;
+   text-align: center;
+}
+.box section aside {
+   position: absolute;
+   left:0;
+   top:0;
+   font-size: 35px;
+   line-height: 35px;
+   padding: 1.5rem;
+   color:#00000066;
+   font-family: 'Frank Ruhl Libre';
+   font-weight: 900;
+}
+.box section p {
+   font-family: 'Fira Sans';;
+   font-weight: 500;
+   font-size: 17px;
+   color: #000000B2;
+   margin: 0px 40px 0px 40px;
+}
+
+footer {
+   grid-column: 1/span 6;
+   grid-row: 5;
+   height:408px;
+   background-color: #777574;
+   display: flex;
+   justify-content: center;
+   
+}
+.foot-nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 68px;
+   background-color: #A9A19E;
+}
+
+.foot-nav p {
+   font-size: 17px;
+   font-weight: 500;
+   margin-top: 0;
+}
+
+.foot-nav a {
+   opacity: 1;
+   margin-top: 15px;
+}
+
+/*CONTACT*/
+
+#bod-2 header {
+   grid-column: 1/6;
+   width: 1000px;
+   margin: 0 auto;
+   margin-top: -8px;
+   background-color: #C7DDEA;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+#bod-2 header figure {
+   height: 320px;
+   display: flex;
+   flex-direction: column;
+   width: 230px;
+   margin: 0px 80px 0px 40px;  
+   
+}
+.wrapper2 header h1 {
+   font-size: 45px;
+   align-self: center;
+}
+.wrapper2 header img:first-child {
+   transform: translateY(12px);
+}
+.wrapper2 nav {
+   grid-column: 2/5;
+   grid-row: 2;
+}
+.wrapper2 nav ul li:nth-child(4) a {
+   opacity: 1;   
+}
+.wrapper2 nav ul li:nth-child(1) a {
+   opacity: 0.4;
+}
+
+#bod-2 .form-container {
+   height: 544px;
+   grid-row: 3;
+   grid-column: 1/6;
+   background-color: #A9A19E;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+#bod-2 .form-container aside:first-child {
+   height: 377px;
+   width: 334px;
+   display: flex;
+
+}
+#bod-2 .form-container aside:last-child {
+   width: 334px;
+   display: flex;
+   flex-direction: column;
+}
+.adress, .msg-form {
+   width: 334px;
+   height: 40px;
+   border-radius: 2px;
+   border: none;
+   background-color: #FEFEFE;
+}
+.msg-form {
+   height: 166px; 
+}
+::placeholder {
+   font-family: 'Fira Sans';
+   font-weight: 400;
+   color: #000;
+}
+.msg-form {
+   font-family: 'Fira Sans';
+   font-weight: 400;
+}
+#bod-2 .form-container aside:last-child .btn {
+   align-self: flex-end;
+   margin-top: 2rem;
+}
+
+
+.wrapper2 .map-container {
+   grid-column: 1/6;
+   height: 407px;
+   background-image: url(/insurance/images/map.svg);
+   position: relative;
+}
+.wrapper2 .map-container .pin-info {
+   background-color: #FAB131;
+   width: 323px;
+   height: 206px;
+   padding: 1rem;
+   position: absolute;
+   top: 45px;
+   left: 86px;
+}
+.wrapper2 .map-container .pin-info p {
+   font-family: 'Fira Sans';
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 24px;
+   color: #FFFFFFCC;
+   margin: 0px;
+}
+.wrapper2 .map-container .pin-info h2 {
+   font-family: 'Frank Ruhl Libre';
+   font-size: 45px;
+}
+.wrapper2 .map-container .pin {
+   width: 70px;
+   position: absolute;
+   top: 160px;
+   left: 466px; 
+}
+
+.wrapper2 footer {
+   margin-top: 0px;
+   grid-row: 5;
+   height: 340px;
+}
+
