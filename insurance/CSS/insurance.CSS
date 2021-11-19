@@ -188,8 +188,8 @@ main article:first-child aside:first-child .btn {
 
 main article:nth-child(2) {
    margin: 0 auto;
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   display: flex;
+   justify-content: center;
    align-items: center;
    gap: 1.5rem;
 }
@@ -431,19 +431,33 @@ footer {
 .msg-form {
    height: 166px; 
 }
+.form-container aside p {
+   font-family: 'Fira Sans';
+   font-weight: 700;
+   font-size: 14px;
+   color: #fff;
+   opacity: 0.7;
+}
+.form-container aside h2 {
+   font-size: 45px;
+}
 ::placeholder {
    font-family: 'Fira Sans';
    font-weight: 400;
    color: #000;
+   opacity: 1;
+   padding: 1rem;
 }
 .msg-form {
    font-family: 'Fira Sans';
    font-weight: 400;
 }
+
 #bod-2 .form-container aside:last-child .btn {
    align-self: flex-end;
    margin-top: 2rem;
 }
+
 
 
 .wrapper2 .map-container {
@@ -485,4 +499,3 @@ footer {
    grid-row: 5;
    height: 340px;
 }
-
