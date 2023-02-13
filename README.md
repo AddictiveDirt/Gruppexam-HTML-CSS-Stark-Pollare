@@ -1,2 +1,2 @@
-# Gruppexam-Pollare-Stark
+# Gruppexam-Stark
  
